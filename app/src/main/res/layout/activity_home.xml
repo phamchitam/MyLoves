@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SelectJobs">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCongViec"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm của bạn: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/txtDiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintLeft_toRightOf="@id/textView"
+        android:layout_marginLeft="10dp"
+        tools:layout_editor_absoluteX="105dp" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào bạn Phạm Nguyễn Khả Di"
+        app:layout_constraintBottom_toBottomOf="@id/txtDiem"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        tools:layout_editor_absoluteX="214dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Công việc"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm +"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="175dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm -"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="245dp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="305dp" />
+
+    <Button
+        android:id="@+id/btnXacNhanCongViec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="480dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
